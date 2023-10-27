@@ -1,0 +1,14 @@
+version: "3"
+services:
+  flipkart:
+    build: .
+    volumes:
+    - flipkart:/app
+    networks:
+    - flipkart
+    ports:
+    - "8080:8080"
+volumes:
+  flipkart:
+networks:
+  flipkart:
